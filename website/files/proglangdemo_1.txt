@@ -1,0 +1,54 @@
+Script started on Fri 01 Sep 2017 10:16:37 AM EDT
+]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ sqip [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kwip l
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.4.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consuilt[K[K[Klt('proglang.pro)[K'[12G[26G)[11G[27G;[K.
+[1mtrue.[0m
+
+?- l[Klisting(languaghe[K[Ke)[11G[21G.
+language(smalltalk).
+language(lisp).
+language(prolog).
+
+[1mtrue.[0m
+
+?- listing(essence)[11G[20G.
+essence(smalltalk, objects, 'message passing').
+essence(lisp, lists, 'recursive functions').
+essence(prolog, relations, 'logical inferencing').
+
+[1mtrue.[0m
+
+?- listing(history)[11G[20G,[K.
+:- multifile prolog:history/2.
+
+prolog:history(A, add(B)) :-
+	editline:el_add_history(A, B).
+prolog:history(A, load(B)) :-
+	editline:el_read_history(A, B).
+prolog:history(A, save(B)) :-
+	editline:el_write_history(A, B).
+prolog:history(A, load) :-
+    editline:
+    (   el_history_events(A, B),
+	'$reverse'(B, C),
+	forall('$member'(D, C), add_event(D))
+    ).
+
+history(smalltalk, inventor('Alan Kay'), date(1980)).
+history(lisp, inventor('John McCarthy'), date(1959)).
+history(prolog, inventor('Alan Colmeraur'), date(1971)).
+
+[1mtrue.[0m
+
+?- halt.
+]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ exit [A
+exit
+
+Script done on Fri 01 Sep 2017 10:17:08 AM EDT
