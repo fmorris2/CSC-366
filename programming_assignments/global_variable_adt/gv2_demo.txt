@@ -1,0 +1,59 @@
+Script started on Fri 22 Sep 2017 05:27:18 PM EDT
+]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/global_variable_adt[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/global_variable_adt[00m$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('gv2.pro'[12G[21G)[11G[22G.
+[1mtrue.[0m
+
+?- declare(a,10)[11G[17G.
+[1mtrue.[0m
+
+?- declare(b,5)[11G[16G.
+[1mtrue.[0m
+
+?- displayBindings.
+a -> 10
+b -> 5
+[1mtrue.[0m
+
+?- add(a,b,sum)[7G[16G.
+[1mtrue.[0m
+
+?- displayBindings.
+a -> 10
+b -> 5
+sum -> 15
+[1mtrue.[0m
+
+?- sub(a,b,difference)[7G[23G,[K.
+[1mtrue.[0m
+
+?- mul(a,b,product)[7G[20G.
+[1mtrue.[0m
+
+?- dib([K[Kv(a,b,quotient)[7G[21G.
+[1mtrue.[0m
+
+?- pow(a,b,power)[7G[18G.
+[1mtrue.[0m
+
+?- displayBindings.
+a -> 10
+b -> 5
+sum -> 15
+difference -> 5
+product -> 50
+quotient -> 2
+power -> 100000
+[1mtrue.[0m
+
+?- halt.
+]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/global_variable_adt[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/global_variable_adt[00m$ exit
+exit
+
+Script done on Fri 22 Sep 2017 05:29:07 PM EDT
