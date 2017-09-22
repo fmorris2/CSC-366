@@ -1,0 +1,62 @@
+FACTS ABOUT NFL TEAMS
+
+dolphins are an NFL team.
+bills are an NFL team.
+patriots are an NFL team.
+....
+
+FACTS ABOUT NFL DIVISIONS
+
+AFC East is a division which contains the dolphins, bills, patriots, 
+and jets.
+
+AFC West is a division which contains the broncos, raiders, chiefs, and chargers.
+
+AFC North is a division which contains the ravens, steelers, bengals, and browns.
+
+....
+
+FACTS ABOUT ELITE NFL PLAYERS
+
+Ndamukong Suh is an elite defensive tackle on the dolphins.
+LeSean McCoy is an elite halfback on the bills.
+Tom Brady is an elite quarterback on the patriots.
+Muhammad Wilkerson is an elite defensive end on the jets.
+
+....
+
+RULE FOR LISTING TEAMS
+
+if you sequentially, exhaustively grab a team and write its name, then 
+you will have written the names of all teams.
+
+RULE FOR FINDING IF A SPECIFIC TEAM IS IN A CERTAIN DIVISION
+
+if the list of teams for a certain division exists, and the specified team is a member of that list, then the team is in the division.
+
+RULES FOR FINDING WHICH CONFERENCE A TEAM IS IN
+
+if a team is in any of the NFC divisions, then it is an NFC team.
+
+if a team is in any of the AFC divisions, then it is an AFC team.
+
+RULES FOR LISTING ALL TEAMS IN A CONFERENCE
+
+if you sequentially, exhaustively grab a team, and that team is an NFC team, and you write the name of that team, then you will have written the names of all NFC teams.
+
+if you sequentially, exhaustively grab a team, and that team is an AFC team, and you write the name of that team, then you will have written the names of all AFC teams.
+
+RULES FOR LSITING ELITE PLAYERS
+
+if you sequentially, exhaustively grab an elite player and write their name, then you will have written the names of all elite players.
+
+if you sequentially, exhaustively grab an elite player, and that player is on an NFC team, and you write the name of that player, then you will have written the names of all elite players in the NFC.
+
+if you sequentially, exhaustively grab an elite player, and that player is on an AFC team, and you write the name of that player, then you will have written the names of all elite players in the AFC.
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+Script started on Tue 19 Sep 2017 10:53:53 PM EDT
+]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/wildcard_assignment[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/wildcard_assignment[00m$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('nflkb.pro'[12G[23G)[11G[24G.
+[1mtrue.[0m
+
+*- LIST THE NAMES OF ALL OF THE DIVISIONS - INTERACTIVE MODE
+?- division(N,_)[12G[17G.
+N = 'AFC East' [1m;[0m
+N = 'AFC West' [1m;[0m
+N = 'AFC North' [1m;[0m
+N = 'AFC South' [1m;[0m
+N = 'NFC East' [1m;[0m
+N = 'NFC West' [1m;[0m
+N = 'NFC North' [1m;[0m
+N = 'NFC South'.
+
+*- LIST ALL OF THE TEAMS
+?- teams.
+dolphins
+bills
+patriots
+jets
+broncos
+raiders
+chiefs
+chargers
+ravens
+steelers
+bengals
+browns
+titans
+jaguars
+texans
+colts
+eagles
+cowboys
+redskins
+giants
+seahawks
+cardinals
+rams
+49ers
+lions
+vikings
+packers
+bears
+falcons
+panthers
+buccaneers
+saints
+[1mtrue.[0m
+
+*- ARE THE VIKINGS IN THE NFC NORTH?
+?- in_division('NFC North'[16G[27G, vikings)[15G[37G.
+[1mtrue.[0m
+
+*- ARE THE LIONS IN THE NFC NORTH?
+?- in_division('NFC North', lions).
+[1mtrue.[0m
+
+*- ARE THE PATRIOTS AN NFC TEAM?
+?- nc[Kfc_team(patriots)[12G[22G.
+[1;31mfalse.[0m
+
+*- ARE THE PATRIOTS AN AFC TEAM?
+?- afc_team(patriots)[12G[22G.
+[1mtrue.[0m
+
+*- LIST ALL OF THE NFC TEAMS.
+?- nfc_teams.
+eagles
+cowboys
+redskins
+giants
+seahawks
+cardinals
+rams
+49ers
+lions
+vikings
+packers
+bears
+falcons
+panthers
+buccaneers
+saints
+[1mtrue.[0m
+
+*- LIST ALL OF THE AFC TEAMS.
+?- afc_teams.
+dolphins
+bills
+patriots
+jets
+broncos
+raiders
+chiefs
+chargers
+ravens
+steelers
+bengals
+browns
+titans
+jaguars
+texans
+colts
+[1mtrue.[0m
+
+*- LIST ALL OF THE ELITE PLAYERS
+?- elite_players.
+Ndamukong Suh
+LeSean McCoy
+Tom Brady
+Muhammad Wilkerson
+Aqib Talib
+Khalil Mack
+Travis Kelce
+Philip Rivers
+Terrell Suggs
+Antonio Brown
+Geno Atkins
+Joe Thomas
+Jurrell Casey
+Jalen Ramsey
+JJ Watt
+Andrew Luck
+Malcolm Jenkins
+Tyron Smith
+Trent Williams
+Odell Beckham Jr
+Kam Chancellor
+David Johnson
+Aaron Donald
+Joe Staley
+Matthew Stafford
+Xavier Rhodes
+Aaron Rodgers
+Pernell McPhee
+Julio Jones
+Luke Kuechly
+Mike Evans
+Drew Brees
+[1mtrue.[0m
+
+*-LIST ALL OF THE ELITE NFC PLAYERS.
+?- elite_nfc_players.
+Malcolm Jenkins
+Tyron Smith
+Trent Williams
+Odell Beckham Jr
+Kam Chancellor
+David Johnson
+Aaron Donald
+Joe Staley
+Matthew Stafford
+Xavier Rhodes
+Aaron Rodgers
+Pernell McPhee
+Julio Jones
+Luke Kuechly
+Mike Evans
+Drew Brees
+[1mtrue.[0m
+
+*- LIST ALL OF THE ELITE AFC PLAYERS.
+
+?- elite_afc_players.
+Ndamukong Suh
+LeSean McCoy
+Tom Brady
+Muhammad Wilkerson
+Aqib Talib
+Khalil Mack
+Travis Kelce
+Philip Rivers
+Terrell Suggs
+Antonio Brown
+Geno Atkins
+Joe Thomas
+Jurrell Casey
+Jalen Ramsey
+JJ Watt
+Andrew Luck
+[1mtrue.[0m
+
+*- TERMINATE EXECUTION
+?- halt.
+]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/wildcard_assignment[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/wildcard_assignment[00m$ exit
+exit
+
+Script done on Tue 19 Sep 2017 10:57:41 PM EDT

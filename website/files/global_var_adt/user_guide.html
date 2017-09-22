@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<title>Global Variable ADT User's Guide</title>
+</head>
+<body>
+<h1>Overview</h1>
+<p>
+The global variable abstract data type (ADT) currently offers an easy way to do basic arithmetic operations on defined variables. These variables are stored globally, so they can be referenced throughout the lifetime of the Prolog session. 
+</p>
+<p>
+The global variable ADT currently supports non-destructive operations on variables. This means that the input variables will not be changed, and you must provide the name of the output variable where the result will be stored. The global variable ADT currently supports the following operations:
+</p
+<ul>
+	<li>Addition</li>
+	<li>Subtraction</li>
+	<li>Multiplication</li>
+	<li>Division</li>
+	<li>Raising a number to an exponent</li>
+</ul>
+<h2>Usage</h2>
+<p>The global variable ADT provides some simple rules to make declaring and performing operations on variables easy.
+</p>
+<ul>
+	<li>declare(Var,Val)
+		<ul>
+			<li>Binds Val to the variable named Var</li>
+			<li>Overrides the current binding to Var if it is already defined</li>
+		</ul>
+	</li>
+	<li>valueOf(Variable,Value)
+		<ul>
+			<li>Finds the value of Variable in our current bindings, and returns it as Value</li>
+		</ul>
+	</li>
+	<li>undeclare(Var)
+		<ul>
+			<li>Removes any binding in the ADT with the name Var</li>
+		</ul>
+	</li>
+	<li>displayBindings
+		<ul>
+			<li>Lists all current bindings in the ADT</li>
+		</ul>
+	</li>
+	<li>inc(Variable)
+		<ul>
+			<li>Adds 1 to the current value mapped to Variable</li>
+		</ul>
+	</li>
+	<li>dec(Variable)
+		<ul>
+			<li>Subtracts 1 from the current value mapped to Variable</li>
+		</ul>
+	</li>
+	<li>add(FirstVar,SecondVar,ResultVar)
+		<ul>
+			<li>Adds the value bound to SecondVar to the value bound to FirstVar, and binds the result to a variable named ResultVar</li>
+		</ul>
+	</li>
+	<li>sub(FirstVar,SecondVar,ResultVar)
+		<ul>
+			<li>Subtracts the value bound to SecondVar from the value bound to FirstVar, and binds the result to a variable named ResultVar</li>
+		</ul>
+	</li>
+	<li>mul(FirstVar,SecondVar,ResultVar)
+		<ul>
+			<li>Multiplies the value bound to FirstVar with the value bound to SecondVar, and binds the result to a variable named ResultVar</li>
+		</ul>
+	</li>
+	<li>div(FirstVar,SecondVar,ResultVar)
+		<ul>
+			<li>Divides the value bound to FirstVar with the value bound to SecondVar, and binds the result to a variable named ResultVar</li>
+		</ul>
+	</li>
+	<li>pow(FirstVar,SecondVar,ResultVar)
+		<ul>
+			<li>Raises the value bound to FirstVar by the exponent represented by the value bound to SecondVar, and binds the result to a variable named ResultVar</li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>
