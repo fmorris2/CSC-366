@@ -1,0 +1,71 @@
+-freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/sets$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('combosets.pro').
+true.
+
+?- permutations(p,a).
+pa ap 
+false.
+
+?- permutations(p,a,u).
+pau pua apu aup upa uap 
+false.
+
+?- permutations(p,a,u,l).
+paul palu pual pula plau plua apul aplu aupl aulp alpu alup upal upla uapl ualp ulpa ulap lpau lpua lapu laup lupa luap 
+false.
+
+?- permutations(p,a,u,l,a).
+paula paual palua palau paaul paalu puala puaal pulaa pulaa puaal puala plaua plaau pluaa pluaa plaau plaua paaul paalu paual paula palau palua apula apual aplua aplau apaul apalu aupla aupal aulpa aulap auapl aualp alpua alpau alupa aluap alapu alaup aapul aaplu aaupl aaulp aalpu aalup uapla uapal ualpa ualap uaapl uaalp upala upaal uplaa uplaa upaal upala ulapa ulaap ulpaa ulpaa ulaap ulapa uaapl uaalp uapal uapla ualap ualpa laupa lauap lapua lapau laaup laapu luapa luaap lupaa lupaa luaap luapa lpaua lpaau lpuaa lpuaa lpaau lpaua laaup laapu lauap laupa lapau lapua aaulp aaupl aalup aalpu aapul aaplu aualp auapl aulap aulpa aupal aupla alaup alapu aluap alupa alpau alpua apaul apalu apual apula aplau aplua 
+false.
+
+?- combos(set(winston,julia,obrien),combo(A,B),_).
+A = winston,
+B = julia ;
+A = julia,
+B = obrien ;
+A = winston,
+B = obrien.
+
+?- combos(set(winston,julia,obrien,syme),combo(A,B),_).
+A = winston,
+B = julia ;
+A = winston,
+B = obrien ;
+A = winston,
+B = syme ;
+A = julia,
+B = obrien ;
+A = julia,
+B = syme ;
+A = obrien,
+B = syme.
+
+?- combos(set(winston,julia,obrien,syme,big_brother),combo(A,B),_).
+A = winston,
+B = julia ;
+A = winston,
+B = obrien ;
+A = winston,
+B = syme ;
+A = winston,
+B = big_brother ;
+A = julia,
+B = obrien ;
+A = julia,
+B = syme ;
+A = julia,
+B = big_brother ;
+A = obrien,
+B = syme ;
+A = obrien,
+B = big_brother ;
+A = syme,
+B = big_brother.
+
