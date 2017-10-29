@@ -1,0 +1,91 @@
+freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/list$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('lp.pro').
+true.
+
+?- writelist([minnesota, vikings, green_bay, packers]).
+minnesota
+vikings
+green_bay
+packers
+true.
+
+?- member(5, [1,2,3,4]).
+false.
+
+?- member(4, [1,2,3,4]).
+true ;
+false.
+
+?- size([0,1,2,3,4,5,6,7,8],S).
+S = 9.
+
+?- item(3, [vikings,packers,lions,bears], I).
+I = bears .
+
+?- append([happy, grim], [angry, excited], R).
+R = [happy, grim, angry, excited].
+
+?- append([happy],[grim],[angry],[excited],R).
+R = [happy, grim, angry, excited].
+
+?- last([first, second, third, fourth], L).
+L = fourth .
+
+?- remove(love, [love, hate, relationship], R).
+R = [hate, relationship] .
+
+?- replace(0,steak,[seafood,pizza,vegetables,fruit],R).
+R = [steak, pizza, vegetables, fruit] .
+
+?- makelist(10,vikings,L).
+L = [vikings, vikings, vikings, vikings, vikings, vikings, vikings, vikings, vikings|...] .
+
+?- reverse([r,a,c,e,c,a,r],R).
+R = [r, a, c, e, c, a, r] .
+
+?- lastput(best, [franks, redhot, is, the], L).
+L = [franks, redhot, is, the, best] .
+
+?- pick([1,10,100,1000,10000,100000,1000000],Random).
+Random = 100000 .
+
+?- take([banana,apple,orange,mango],E,L).
+E = mango,
+L = [banana, apple, orange] .
+
+?- iota(5,L).
+L = [1, 2, 3, 4, 5] .
+
+?- sum([10,20,40,30],S).
+S = 100.
+
+?- min([10,20,40,60,5,80,100],M).
+M = 5.
+
+?- max([10,20,40,60,5,80,100],Max).
+Max = 100 .
+
+?- sort_inc([10,20,40,60,5,80,100],Ordered).
+Ordered = [5, 10, 20, 40, 60, 80, 100] .
+
+?- sort_dec([10,20,40,60,5,80,100],Ordered).
+Ordered = [100, 80, 60, 40, 20, 10, 5] .
+
+?- alist([minnesota, green_bay, chicago, detroit],[vikings, packers, bears, lions], Assoc_List).
+Assoc_List = [pair(minnesota, vikings), pair(green_bay, packers), pair(chicago, bears), pair(detroit, lions)].
+
+?- assoc([pair(minnesota,vikings),pair(green_bay,packers),pair(detroit,lions),pair(chicago,bears)],minnesota,V).
+V = vikings .
+
+?- flatten([[java,scala],[python,ruby], [c], [html,javascript]], L).
+L = [java, scala, python, ruby, c, html, javascript] .
+
+?- halt.
+

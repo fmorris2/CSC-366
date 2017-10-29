@@ -1,0 +1,50 @@
+freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/crypto/v4$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('crypto.pro').
+true.
+
+?- solve(random).
+Numbers = {1, 14, 8, 3, 4} Goal = 15
+Solution: ( ( 1 + 14 ) * ( 4 - ( 8 - 3 ) ) )
+true .
+
+?- solve(random).
+Numbers = {13, 8, 5, 8, 4} Goal = 8
+Solution: ( 8 * ( ( 13 + 8 ) - ( 5 * 4 ) ) )
+true .
+
+?- solve(numbers(1,2,3,4,1),goal(1)).
+Numbers = {1, 2, 3, 4, 1} Goal = 1
+Solution: ( ( ( 1 + 2 ) - 4 ) - ( 1 - 3 ) )
+true .
+
+?- demo(10).
+Numbers = {3, 2, 6, 6, 4} Goal = 11
+Solution: ( ( 6 + 6 ) + ( 4 - ( 3 + 2 ) ) )
+Numbers = {5, 14, 14, 11, 1} Goal = 10
+Solution: ( 14 - ( 14 / ( 1 + ( 5 * 11 ) ) ) )
+Numbers = {0, 14, 7, 10, 11} Goal = 7
+Solution: ( ( 7 - ( 0 + 14 ) ) * ( 10 - 11 ) )
+Numbers = {10, 2, 5, 6, 6} Goal = 15
+Solution: ( ( 5 * 6 ) / ( 6 / ( 10 + 2 ) ) )
+Numbers = {9, 12, 4, 2, 11} Goal = 1
+Solution: ( ( 9 + 12 ) - ( 11 * ( 4 - 2 ) ) )
+Numbers = {5, 3, 1, 3, 9} Goal = 10
+Solution: ( ( 5 + 3 ) - ( 9 * ( 1 - 3 ) ) )
+Numbers = {5, 13, 11, 2, 10} Goal = 7
+Solution: ( 11 + ( 2 / ( 10 - ( 5 + 13 ) ) ) )
+Numbers = {11, 4, 5, 8, 10} Goal = 0
+Solution: ( 8 * ( ( 5 + 10 ) - ( 11 + 4 ) ) )
+Numbers = {8, 15, 7, 1, 11} Goal = 10
+Solution: ( ( 7 + 1 ) - ( 11 - ( 8 - 15 ) ) )
+Numbers = {14, 1, 15, 3, 8} Goal = 2
+Solution: ( ( ( 14 + 1 ) / 3 ) - ( 8 - 15 ) )
+true .
+
+?- halt.
