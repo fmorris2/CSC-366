@@ -1,0 +1,52 @@
+freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/nlp$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult('crypto_nlp_r.pro').
+true.
+
+?- recognizer.
+|: Use five and four and three and two and one to make zero.
+ok
+|: Use five and five and five and five and five to make five.
+ok
+|: Use one two three four and five to make six.
+ok
+|: Use one two three four five to make six.
+Not a sentence ...
+|: Write one in terms of the odd numbers.
+ok
+|: Write one in terms of the even numbers.
+Not a sentence ...
+|: Write zero in terms of two through six.
+Not a sentence ...
+|: Write zero in terms of numbers two through six.
+ok
+|: Can you make seven from the first five positive numbers?
+ok
+|: Use whatever to make whatever.
+ok
+|: Can you make three from two zeros and three ones?
+ok
+|: Can you make nine from four threes and one nine?
+ok
+|: Can you make five from nine threes?
+Not a sentence ...
+|: Can you make 5 from 9 threes?
+Not a sentence ...
+|: ^C
+^C
+
+WARNING: By typing Control-C twice, you have forced an asynchronous
+WARNING: interrupt.  Your only SAFE operations are: c(ontinue), p(id),
+WARNING: s(stack) and e(xit).  Notably a(abort) often works, but
+WARNING: leaves the system in an UNSTABLE state
+
+Action (h for help) ? abort
+% Execution Aborted
+?- halt.
+

@@ -1,66 +1,50 @@
-Script started on Sun 03 Sep 2017 05:07:36 PM EDT
-]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ swip l
-Welcome to SWI-Prolog (threaded, 64 bits, version 7.4.2)
+freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/program_1$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit http://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-?- consult('or[K[Kproglang.pro'[12G[26G)[11G[27G.
-[1mtrue.[0m
+?- consult('proglang.pro').
+true.
 
-?- language(snobol)[12G[20G.
-[1mtrue.[0m
+?- language(snobol).
+true.
 
-?- language(snowball)[12G[22G.
-[1;31mfalse.[0m
+?- language(snowball).
+false.
 
-?- essence(snobol,DataType,_)[11G[30G.
+?- essence(snobol,DataType,_).
 DataType = pattern.
 
-?- essence(Language,arrays,_)[11G[30G.
-[1;31mfalse.[0m
+?- essence(L,arrays,_).
+false.
 
-?- language(Language)[12G[22Gw[K,write(Language)[28G[38G,nl,fail.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klanguage(Language)[12G[22G.
-Language = smalltalk [1m;[0m
-Language = lisp [1m;[0m
-Language = prolog [1m;[0m
-Language = snobol [1m;[0m
-Language = apl.
-
-?- language(Language)[12G[22G,write(Language)[28G[38G,nl,fail.
+?- language(L),write(L),nl,fail.
 smalltalk
 lisp
 prolog
 snobol
 apl
-[1;31mfalse.[0m
+false.
 
-?- history(apl,inventor(Name)[24G[30G,_)[11G[33G.
+?- history(apl,inventor(Name),_).
 Name = 'Kenneth Iverson'.
 
-?- history(_,inventor(Name)[22G[28G,)[11G[30G[K_)[11G[31G.
-Name = 'Alan Kay' [1m;[0m
-Name = 'John McCarthy' [1m;[0m
-Name = 'Alan Colmeraur' [1m;[0m
-Name = 'Ralph Griswold (among others)' [1m;[0m
+?- history(_,inventor(Name),_).
+Name = 'Alan Kay' ;
+Name = 'John McCarthy' ;
+Name = 'Alan Colmeraur' ;
+Name = 'Ralph Griswold (among others)' ;
 Name = 'Kenneth Iverson'.
 
-?- history(_,inventor(Name)[22G[28G,_)[11G[31G,write(Name)[37G[43G,nl,fail.
+?- history(_,inventor(Name),_),write(Name),nl,fail.
 Alan Kay
 John McCarthy
 Alan Colmeraur
 Ralph Griswold (among others)
 Kenneth Iverson
-[1;31mfalse.[0m
-
-?- history(__[K,_,date(1959)[20G[26G)[11G[27G,essence(_,lists,_)[35G[46G.
-[1mtrue [0m[1m;[0m
-[1;31mfalse.[0m
+false.
 
 ?- halt.
-]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ exit [A
-exit
-
-Script done on Sun 03 Sep 2017 05:14:50 PM EDT

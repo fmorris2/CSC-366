@@ -42,9 +42,9 @@ displayProblem :-
 	nl.
 
 %Demo
-demo :-
-	generateRandomCryptoProblem,
-	displayProblem.
+%demo :-
+%	generateRandomCryptoProblem,
+%	displayProblem.
 
 %generate and display some number of crypto problems
 generate(1) :-

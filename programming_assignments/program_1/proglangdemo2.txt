@@ -1,62 +1,60 @@
-Script started on Sun 03 Sep 2017 04:42:08 PM EDT
-]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ sqi[K[Kwip l
-Welcome to SWI-Prolog (threaded, 64 bits, version 7.4.2)
+freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/program_1$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit http://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-?- consult('proglang.pro'[12G[26G)[11G[27G;[K.
-[1mtrue.[0m
+?- consult('proglang.pro').
+true.
 
-?- language(pascal)[12G[20G.
-[1;31mfalse.[0m
+?- language(pascal).
+false.
 
-?- language(prolog)[12G[20G.
-[1mtrue.[0m
+?- language(prolog).
+true.
 
-?- language(X)(X).
-X = smalltalk [1m.[0m
+?- language(X).
+X = smalltalk .
 
-?- language(L)(L).
-L = smalltalk [1m;[0m
-L = lisp [1m;[0m
-L = prolog.
+?- language(L).
+L = smalltalk ;
+L = lisp ;
+L = prolog ;
+L = snobol ;
+L = apl.
 
-?- language(Languahe[K[Kge)[12G[22G,write(Language)[28G[38G,nl,fail.
+?- language(L),write(L),nl,fail.
 smalltalk
 lisp
 prolog
-[1;31mfalse.[0m
+snobol
+apl
+false.
 
-?- essence(lisp,DT,CF)[11G[23G.
+?- essence(lisp,DT,CF).
 DT = lists,
 CF = 'recursive functions'.
 
-?- essence(prolog,DT,)[11G[23G)[K[K_)[11G[24G.
+?- essence(prolog,DT,_).
 DT = relations.
 
-?- essnec[K[K[Kence(prolog,_,CF)[11G[24G.
+?- essence(prolog,_,CF).
 CF = 'logical inferencing'.
 
-?- essence(L,objects,_)[11G[24G.
+?- essence(L,objects,_).
 L = smalltalk.
 
-?- history(lisp,I,_)[11G[21G.
+?- history(lisp,I,_).
 I = inventor('John McCarthy').
 
-?- history(inventor[K[K[K[K[K[K[K[K[K(list[Kp,inventor(na[K[KName)[25G[31G,_)[11G[34G.
-Name = 'John McCarthy'.
-
-?- history(_,inventor(N)(N),_)[11G[28G,write(N)(N),nl,fail.
+?- history(_,inventor(N),_),write(N),nl,fail.
 Alan Kay
 John McCarthy
 Alan Colmeraur
-[1;31mfalse.[0m
+Ralph Griswold (among others)
+Kenneth Iverson
+false.
 
 ?- halt.
-]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ exit [A
-exit
-
-Script done on Sun 03 Sep 2017 04:46:23 PM EDT

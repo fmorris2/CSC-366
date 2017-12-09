@@ -1,31 +1,33 @@
-Script started on Fri 01 Sep 2017 10:16:37 AM EDT
-]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ sqip [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kwip l
-Welcome to SWI-Prolog (threaded, 64 bits, version 7.4.2)
+freddy@Freddy-Laptop:~/Documents/CSC-366/programming_assignments/program_1$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.0-rc1)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit http://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-?- consuilt[K[K[Klt('proglang.pro)[K'[12G[26G)[11G[27G;[K.
-[1mtrue.[0m
+?- consult('proglang.pro').
+true.
 
-?- l[Klisting(languaghe[K[Ke)[11G[21G.
+?- listing(language).
 language(smalltalk).
 language(lisp).
 language(prolog).
+language(snobol).
+language(apl).
 
-[1mtrue.[0m
+true.
 
-?- listing(essence)[11G[20G.
+?- listing(essence).
 essence(smalltalk, objects, 'message passing').
 essence(lisp, lists, 'recursive functions').
 essence(prolog, relations, 'logical inferencing').
+essence(snobol, pattern, 'string processing').
+essence(apl, matrix, 'matrix operations').
 
-[1mtrue.[0m
+true.
 
-?- listing(history)[11G[20G,[K.
+?- listing(history).
 :- multifile prolog:history/2.
 
 prolog:history(A, add(B)) :-
@@ -44,11 +46,9 @@ prolog:history(A, load) :-
 history(smalltalk, inventor('Alan Kay'), date(1980)).
 history(lisp, inventor('John McCarthy'), date(1959)).
 history(prolog, inventor('Alan Colmeraur'), date(1971)).
+history(snobol, inventor('Ralph Griswold (among others)'), date(1962)).
+history(apl, inventor('Kenneth Iverson'), date(1964)).
 
-[1mtrue.[0m
+true.
 
 ?- halt.
-]0;freddy@Freddy-Laptop: ~/Documents/CSC-366/programming_assignments/program_1[01;32mfreddy@Freddy-Laptop[00m:[01;34m~/Documents/CSC-366/programming_assignments/program_1[00m$ exit [A
-exit
-
-Script done on Fri 01 Sep 2017 10:17:08 AM EDT
